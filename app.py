@@ -59,7 +59,7 @@ with col3:
     )
     
     # Menggabungkan hasil list multiselect menjadi satu string yang dipisahkan koma
-    dimensi_profil_lulusan = ", ".join(dimensi_terpilled) if dimensi_terpilih else "Tidak ada dimensi yang dipilih"
+    dimensi_profil_lulusan = ", ".join(dimensi_terpilih) if dimensi_terpilih else "Tidak ada dimensi yang dipilih"
 
     praktik_pedagogis = st.text_input("Praktik Pedagogis:", "Diskusi, Kateketis")
     lingkungan_pembelajaran = st.text_input("Lingkungan Pembelajaran:", "Ruang Kelas")
