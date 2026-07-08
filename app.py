@@ -27,9 +27,9 @@ col1, col2 = st.columns(2)
 
 with col1:
     mapel = st.text_input("Mata Pelajaran:", "Pendidikan Agama Katolik")
-    kelas_fase = st.text_input("Kelas / Fase:", "Kelas 8 / Fase D")
+    kelas_fase = st.text_input("Kelas / Fase:", "Kelas ... / Fase ...")
     elemen = st.selectbox("Elemen Pembelajaran:", ["Yesus Kristus", "Peserta Didik", "Gereja", "Masyarakat"])
-    topik_bahasan = st.text_input("Topik / Pokok Bahasan:", "Yesus yang mengutus Roh Kudus")
+    topik_bahasan = st.text_input("Topik / Pokok Bahasan:", "...")
 
 with col2:
     tujuan_pembelajaran = st.text_area("Tujuan Pembelajaran:", "Murid Memahami ...")
