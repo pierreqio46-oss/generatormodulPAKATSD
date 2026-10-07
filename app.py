@@ -10,7 +10,7 @@ st.set_page_config(page_title="Generator RPP Deep Learning", layout="wide")
 st.title("⛪ Generator Modul Ajar Pendidikan Agama Katolik SD")
 st.subheader("Berbasis Pembelajaran Mendalam (Deep Learning) - Multi-Pertemuan")
 st.write(
-    "Isi formulir di bawah ini untuk merancang modulajar secara otomatis"
+    "Isi formulir di bawah ini untuk merancang modul ajar secara otomatis"
     " menggunakan AI."
 )
 
@@ -118,7 +118,6 @@ def buat_file_docx(teks_rpp):
   font.name = "Arial"
   font.size = Pt(11)
 
-  # Hapus tag HTML dasar agar tidak mengotori dokumen Word
   bersih_teks = (
       teks_rpp.replace("<p>", "")
       .replace("</p>", "\n")
@@ -189,9 +188,9 @@ if st.button("🚀 Generate RPP / Modul Ajar", type="primary"):
                 Sebelah kanan: Metro, Penulis {penulis} (NIP: {nip_penulis})
                 """
 
-        # Memanggil API dengan model yang direkomendasikan
+        # Menggunakan model gemini-3.8-flash terbaru
         response = client.models.generate_content(
-            model="gemini-2.5-flash",
+            model="gemini-3.8-flash",
             contents=prompt_text,
         )
 
